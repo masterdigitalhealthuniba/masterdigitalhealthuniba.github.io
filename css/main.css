@@ -955,7 +955,7 @@ footer .block-title {
   margin-bottom: 25px;
 }
 footer .footer-Content {
-  background-image: url("../img/funiba.png"),url("../img/footer_poliba.png");
+  background-image: url("../img/funiba.png");
   background-position-x: -150px, calc(100% + 150px);
   background-position-y: bottom, 160px;
   background-color: #004071;
