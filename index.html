@@ -1,562 +1,317 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="it">
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Short Master Digital Health Uniba</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Short Master Digital Health | Università degli Studi di Bari Aldo Moro</title>
+<meta name="description" content="Short Master in Digital Health dell'Università di Bari, a.a. 2026/2027, strutturato sul modello Edunext (MUR–PNRR). 5 CFU, 136 ore, modalità blended: forma lo Specialista per la trasformazione digitale della sanità.">
+<meta name="keywords" content="Short Master Digital Health, Edunext, Università di Bari, UniBA, trasformazione digitale sanità, telemedicina, IoMT, machine learning sanità, health data science, interoperabilità sanitaria, master universitario Bari, PNRR">
+<link rel="canonical" href="https://masterdigitalhealthuniba.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="Short Master Digital Health · UniBA">
+<meta property="og:title" content="Short Master Digital Health | Università degli Studi di Bari Aldo Moro">
+<meta property="og:description" content="a.a. 2026/2027 · modello Edunext · 5 CFU · 136 ore · blended. Forma lo Specialista per la trasformazione digitale della sanità.">
+<meta property="og:url" content="https://masterdigitalhealthuniba.github.io/">
+<meta property="og:image" content="https://masterdigitalhealthuniba.github.io/assets/img/hero_img-1.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Short Master Digital Health | Università di Bari">
+<meta name="twitter:description" content="a.a. 2026/2027 · modello Edunext · 5 CFU · 136 ore · blended.">
+<meta name="twitter:image" content="https://masterdigitalhealthuniba.github.io/assets/img/hero_img-1.webp">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Course",
+  "name":"Short Master in Digital Health",
+  "description":"Short Master in Digital Health dell'Università degli Studi di Bari Aldo Moro, a.a. 2026/2027, strutturato sul modello Edunext (MUR – PNRR, Missione 4). Forma lo Specialista per la trasformazione digitale della sanità: sistemi clinico-ospedalieri, interoperabilità, telemedicina, IoMT, machine learning e health data science.",
+  "inLanguage":"it",
+  "url":"https://masterdigitalhealthuniba.github.io/",
+  "courseMode":"blended",
+  "numberOfCredits":"5 CFU",
+  "timeRequired":"PT136H",
+  "educationalCredentialAwarded":"Attestato di Short Master universitario",
+  "provider":{
+    "@type":"CollegeOrUniversity",
+    "name":"Università degli Studi di Bari Aldo Moro",
+    "department":{"@type":"Organization","name":"Dipartimento di Informatica"},
+    "url":"https://www.uniba.it/",
+    "address":{"@type":"PostalAddress","streetAddress":"Via E. Orabona, 4","postalCode":"70125","addressLocality":"Bari","addressCountry":"IT"}
+  },
+  "hasCourseInstance":{
+    "@type":"CourseInstance",
+    "courseMode":"blended",
+    "location":{"@type":"Place","name":"Dipartimento di Informatica - Università degli Studi di Bari Aldo Moro","address":"Campus Universitario, Via E. Orabona 4, 70125 Bari, Italia"}
+  },
+  "offers":{"@type":"Offer","price":"450.13","priceCurrency":"EUR","category":"Iscrizione"}
+}
+</script>
+<style>
+/* Palette campionata dal brand Edunext (viola #6c2478) */
+:root{
+  --viola:#6c2478;--viola-2:#8e2f96;--magenta:#b83d86;--scuro:#43164f;--lilla:#9b5ba6;
+  --paper:#f6f2f7;--line:#e8dfec;--muted:#5f5566;--ink:#2a1f31;
+  --display:"Poppins",system-ui,sans-serif;--body:"Inter",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--body);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--display);line-height:1.14;margin:0}
+h1,h2{font-weight:300}
+h3,h4{font-weight:600}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:15px 32px;font-family:var(--display);font-weight:500;font-size:13.5px;letter-spacing:.08em;text-transform:uppercase;transition:.2s;cursor:pointer;border:2px solid transparent}
+.btn-viola{background:var(--viola);color:#fff}
+.btn-viola:hover{background:var(--viola-2)}
+.btn-out{border-color:#fff;color:#fff}
+.btn-out:hover{background:#fff;color:var(--viola)}
+.topbar{background:var(--scuro);color:rgba(255,255,255,.82);font-size:13px}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;height:40px;flex-wrap:wrap}
+.topbar a{color:rgba(255,255,255,.82)}
+.topbar .r{display:flex;gap:18px;align-items:center}
+.nav{position:sticky;top:0;z-index:100;background:#fff;box-shadow:0 2px 16px rgba(67,22,79,.08)}
+.nav .wrap{display:flex;align-items:center;height:76px;gap:24px}
+.nav .brand{display:flex;align-items:center;gap:12px;font-family:var(--display);font-weight:600;color:var(--viola);font-size:15px;line-height:1.15}
+.nav .brand img{height:46px}
+.nav ul{list-style:none;display:flex;gap:26px;margin:0 0 0 auto;padding:0}
+.nav ul a{font-family:var(--display);font-weight:500;font-size:14px;color:var(--ink);padding:6px 0;border-bottom:2px solid transparent}
+.nav ul a:hover{color:var(--viola);border-color:var(--viola)}
+@media(max-width:940px){.nav ul{display:none}}
+.hero{position:relative;color:#fff;min-height:80vh;display:flex;align-items:center;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(120deg,rgba(67,22,79,.95),rgba(108,36,120,.82) 45%,rgba(184,61,134,.6)),url('assets/img/hero_img-1.webp') center/cover}
+.hero .wrap{position:relative;z-index:1;padding:80px 26px}
+.hero .eyebrow{font-family:var(--display);font-weight:500;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:#fff;opacity:.92;margin-bottom:22px}
+.hero h1{font-size:clamp(44px,7.5vw,88px);letter-spacing:.01em}
+.hero h1 b{font-weight:600}
+.hero .lead{max-width:600px;font-size:19px;font-weight:300;color:rgba(255,255,255,.92);margin:22px 0 34px;font-family:var(--display)}
+.hero .cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.stats{background:var(--viola)}
+.stats .wrap{display:grid;grid-template-columns:repeat(5,1fr)}
+.stats .s{padding:34px 14px;text-align:center;color:#fff;border-right:1px solid rgba(255,255,255,.16)}
+.stats .s:last-child{border-right:0}
+.stats .n{font-family:var(--display);font-weight:300;font-size:42px}
+.stats .l{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.75);margin-top:4px}
+@media(max-width:820px){.stats .wrap{grid-template-columns:repeat(2,1fr)}.stats .s{border-right:0;border-bottom:1px solid rgba(255,255,255,.16)}}
+section{padding:92px 0}
+.head{text-align:center;max-width:760px;margin:0 auto 54px}
+.head .kick{font-family:var(--display);font-weight:600;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--magenta);display:block;margin-bottom:14px}
+.head h2{font-size:clamp(30px,4.4vw,46px);color:var(--viola)}
+.head h2 b{font-weight:600}
+.head p{color:var(--muted);font-size:17px;margin-top:16px}
+.occ{background:var(--paper)}
+.occ .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.occ .card{background:#fff;padding:40px 32px;box-shadow:0 12px 40px rgba(67,22,79,.07);display:flex;flex-direction:column;border-top:3px solid var(--viola)}
+.occ .card .ic{width:54px;height:54px;border-radius:50%;background:var(--paper);color:var(--viola);display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+.occ .card h3{font-size:21px;color:var(--viola);margin-bottom:10px}
+.occ .card p{color:var(--muted);font-size:15px;flex:1;margin:0}
+.mods{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;position:relative}
+.mods::before{content:"";position:absolute;left:9%;right:9%;top:36px;height:2px;background:linear-gradient(90deg,var(--viola),var(--magenta));opacity:.45}
+.mod{position:relative;text-align:center;background:#fff;border:1px solid var(--line);padding:0 24px 30px}
+.mod .num{width:72px;height:72px;margin:-36px auto 18px;border-radius:50%;background:var(--viola);color:#fff;font-family:var(--display);font-weight:300;font-size:28px;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(67,22,79,.3)}
+.mod .lab{font-family:var(--display);font-weight:600;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--magenta);margin-bottom:8px}
+.mod h3{font-size:18px;color:var(--viola);margin-bottom:8px}
+.mod p{font-size:14px;color:var(--muted);margin:0}
+@media(max-width:900px){.mods{grid-template-columns:repeat(2,1fr)}.mods::before{display:none}}
+@media(max-width:520px){.mods{grid-template-columns:1fr}}
+.model{background:var(--viola);color:#fff}
+.model .head h2{color:#fff}.model .head .kick{color:#fff;opacity:.85}
+.model .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.model .f .ic{width:46px;height:46px;color:#fff;opacity:.9;margin-bottom:16px}
+.model .f h4{font-size:19px;margin-bottom:8px}
+.model .f p{color:rgba(255,255,255,.8);font-size:15px;margin:0}
+@media(max-width:820px){.model .grid{grid-template-columns:1fr;gap:28px}}
+.team{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+.member{text-align:center;background:#fff;padding:30px 20px;box-shadow:0 12px 40px rgba(67,22,79,.07)}
+.member img{width:112px;height:112px;object-fit:cover;border-radius:50%;border:4px solid var(--paper)}
+.member h3{font-size:17px;color:var(--viola);margin:16px 0 4px}
+.member .r{font-size:13px;color:var(--magenta);font-family:var(--display);font-weight:600}
+.member .r span{display:block;color:var(--muted);font-weight:400;font-family:var(--body)}
+@media(max-width:820px){.team{grid-template-columns:repeat(2,1fr)}}
+.enroll{position:relative;color:#fff;text-align:center}
+.enroll::before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(67,22,79,.93),rgba(108,36,120,.9)),url('assets/img/back.png') center/cover}
+.enroll .wrap{position:relative}
+.enroll h2{color:#fff;margin-bottom:8px}
+.enroll .bando{display:inline-block;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:8px 18px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;margin:14px 0 26px}
+.enroll .meta{display:flex;gap:44px;justify-content:center;flex-wrap:wrap;margin-bottom:32px;font-size:14px;color:rgba(255,255,255,.85)}
+.enroll .meta b{display:block;color:#fff;font-family:var(--display);font-weight:300;font-size:26px}
+.contact .grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.contact .field{width:100%;padding:14px 16px;border:1px solid var(--line);font-family:var(--body);font-size:15px;margin-bottom:14px}
+.contact textarea{min-height:120px;resize:vertical}
+.contact .info p{margin:4px 0;color:var(--muted)}
+.contact .info b{color:var(--viola)}
+.contact .info .blk{margin-bottom:18px}
+.contact iframe{width:100%;height:220px;border:0;margin-top:8px}
+@media(max-width:820px){.contact .grid{grid-template-columns:1fr;gap:28px}}
+.band{padding:44px 0;border-top:1px solid var(--line);text-align:center}
+.band .row{display:flex;gap:40px;justify-content:center;align-items:center;flex-wrap:wrap;color:var(--muted);font-family:var(--display);font-weight:600;font-size:14px;letter-spacing:.03em}
+.band .cup{font-size:12px;color:var(--muted);margin-top:18px}
+footer{background:var(--scuro);color:rgba(255,255,255,.72);padding:44px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer img{height:40px;filter:brightness(0) invert(1);opacity:.85}
+footer .cup{font-size:12px;opacity:.6}
+</style>
 </head>
-    <!-- body -->
-<body class="index-page">
+<body>
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+<div class="topbar"><div class="wrap">
+  <span>Short Master · modello Edunext · Università degli Studi di Bari Aldo Moro</span>
+  <div class="r"><a href="mailto:master@uniba.it">master@uniba.it</a><a href="tel:+390805714109">+39 080 571 4109</a></div>
+</div></div>
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-         <img src="assets/img/unibalogo.svg" alt=""> 
+<header class="nav"><div class="wrap">
+  <a class="brand" href="#hero"><img src="assets/img/unibalogo2.svg" alt="Università di Bari">Short Master<br>Digital Health</a>
+  <ul>
+    <li><a href="#about">Il master</a></li>
+    <li><a href="#percorso">Didattica</a></li>
+    <li><a href="#modello">Modello Edunext</a></li>
+    <li><a href="#faculty">Faculty</a></li>
+    <li><a href="#contatti">Contatti</a></li>
+  </ul>
+  <a class="btn btn-viola" href="#iscrizione">Iscriviti</a>
+</div></header>
 
-
-     <!---  <h1 class="sitename">Arsha</h1>-->
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#home" class="active">Home</a></li>
-          <li><a href="#about">Presentazione</a></li>
-          <li><a href="#services">Didattica</a></li>
-          <li><a href="#call-to-action">Iscrizione</a></li>
-          <li><a href="#team">Faculty</a></li>
-
-          <li><a href="#contact">Contatti</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      <!--<a class="btn-getstarted" href="#about">Get Started</a>-->
-
+<section class="hero" id="hero" style="padding:0">
+  <div class="wrap">
+    <div class="eyebrow">Short Master · a.a. 2026/2027 · modello Edunext</div>
+    <h1>Digital <b>Health</b></h1>
+    <p class="lead">Guidare la trasformazione digitale della sanità. Il percorso che forma lo Specialista capace di collegare management sanitario e tecnologie IT.</p>
+    <div class="cta-row">
+      <a class="btn btn-viola" href="#iscrizione">Consulta il bando</a>
+      <a class="btn btn-out" href="#percorso">Il percorso</a>
     </div>
-  </header>
-
-  <main class="main">
-    
-
-    <!-- Hero Section -->
-    <section id="home" class="hero section dark-background">
-
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
-            <h4 style="color: #16183A;">Short Master</h4>
-            <h1>DIGITAL HEALTH</h1>
-            <p style="color: #16183A;">Guidare la trasformazione digitale nel settore sanitario</p>
-
-            <br/>
-       <!--<h2>Apertura Bando II edizione 2025/2026</h2>
-       <h2>dal 30.09.2025 al 30.10.2025</h2>-->
-  <h2>III Edizione</h2>
-       <h2>Anno Accademico 2026/2027</h2>
-
-       <h2> <a href="https://www.uniba.it/it/didattica/master-universitari/short-master/2026-2027/digital-health-guidare-la-trasformazione-digitale-nel-settore-sanitario">Consulta il Bando</a></h2>
-   
-           <!--  <div class="d-flex">
-              <a href="#about" class="btn-get-started">Get Started</a>
-              <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
-            </div>-->
-          </div>
-          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/hero_img-1.webp" class="img-fluid animated" alt="">
-          </div>
-        </div>
-      </div>
-
-    </section><!-- /Hero Section -->
-
-    <!-- Clients Section -->
-   <!--- <section id="clients" class="clients section light-background">
-
-      <div class="container" data-aos="zoom-in">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 2,
-                  "spaceBetween": 40
-                },
-                "480": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 60
-                },
-                "640": {
-                  "slidesPerView": 4,
-                  "spaceBetween": 80
-                },
-                "992": {
-                  "slidesPerView": 5,
-                  "spaceBetween": 120
-                },
-                "1200": {
-                  "slidesPerView": 6,
-                  "spaceBetween": 120
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
-          </div>
-        </div>
-
-      </div>
-
-    </section> -->
-    <!-- /Clients Section -->
- 
-    <!-- About Section -->
-    <section id="about" class="about section ">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Presentazione</h2>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-12 content" data-aos="fade-up" data-aos-delay="100">
-            <p style='text-align:justify;'>Stiamo assistendo ad una profonda trasformazione della Sanit&agrave; che vedr&agrave; nei prossimi anni la riorganizzazione dell&rsquo;assistenza sanitaria pi&ugrave; vicina ai pazienti e ai territori.</p>
-<p style='text-align:justify;'>Il nuovo Fascicolo Sanitario Nazionale e la piattaforma Nazionale di Telemedicina rappresenteranno le autostrade digitali sulle quali transiteranno i servizi di assistenza. Le regioni stanno avviando percorsi di centralizzazione e riorganizzazione delle piattaforme IT sempre pi&ugrave; in cloud, sempre pi&ugrave; sicure e sempre pi&ugrave; intelligenti.</p>
-<p style='text-align:justify;'>Dispositivi medici di diverso tipo vengono immessi sul mercato e metteranno a disposizione una quantit&agrave; enorme di parametri fisiologici che complessi algoritmi di intelligenza artificiale elaboreranno per monitorare lo stato di salute e suggerirci stili di vita e avvisarci con molto anticipo di possibili patologie. Le diagnosi saranno assistite da agenti intelligenti e avremo una nostra copia di un &ldquo;gemello digitale&rdquo; a supporto degli studi e della ricerca medica.</p>
-<p style='text-align:justify;'>In questo contesto &egrave; necessario formare figure professionali che da un lato conoscano i sistemi clinici-ospedalieri e dall&rsquo;altro sappiano applicare le nuove tecnologie informatiche per digitalizzare le informazioni, far parlare sistemi diversi e supportare la ricerca clinica.</p>
-      
-          </div>
-
- 
-
-        </div>
-
-      </div>
-
-    </section><!-- /About Section -->
-
-    <!-- Why Us Section -->
-    <section id="why-us" class="section why-us light-background" data-builder="section ">
-
-      <div class="container-fluid">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
-
-            <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
-              <h3><strong>La Figura Professionale</strong></h3>
-        
-
-              <p>
-                La figura dello Specialista per la Trasformazione Digitale è un esperto di sistemi IT della Sanità, è in grado di analizzare lo stato dei sistemi informatici di una regione o di un ospedale, accompagna l’analisi della situazione futura e individua - insieme a specialisti IT e sanitari – i piani di transizione digitale sfruttando la conoscenza delle tecnologie cloud, di cybersecurity e di intelligenza artificiale. È in grado di analizzare dati di diversa provenienza e di rappresentarli in una forma utile all’analisi dei sistemi sanitari e alle previsioni. Accompagna le Amministrazioni nei progetti di trasformazione digitale e rappresenta il link fra il management sanitario e i tecnici IT.              </p>
-            
-                <h3><strong>A chi si rivolge</strong></h3>
-        
-
-                <p>
-                 Professionisti del settore sanitario, Informatici che lavorano nell'ambito sanitario </p>
-            
-              </div>
-
-
-          </div>
-
-          <div class="col-lg-5 order-1 order-lg-2 why-us-img">
-            <img src="assets/img/why-us.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Why Us Section -->
-
-        <!-- Why Us Section -->
-        <section id="why-us" class="section why-us" data-builder="section">
-
-          <div class="container-fluid">
-    
-            <div class="row gy-4">
-    
-              <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
-    
-                <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
-                  <h3><strong>Il Progetto DARE</strong></h3>
-            
-    
-               
-		<p>Il progetto DARE è finanziato dal MUR nell’ambito del Piano Nazionale per gli investimenti Complementari al PNRR, con l’obiettivo di esaltare il potenziale dei dati per migliorare la promozione della salute e fare prevenzione per tutto l’arco della vita.</p><p>DARE raggiungerà questo obiettivo potenziando gli strumenti, le conoscenze e i processi per l’uso efficace dei dati al fine di definire, monitorare e prevedere le traiettorie della salute.</p>
-    <p>Altri obiettivi includono:</p><ul><li>Fare della Fondazione DARE il centro di riferimento nazionale per le tecnologie digitali per la prevenzione.</li><li>Creare una comunità orientata alla prevenzione digitale attraverso la ricerca, l’innovazione e il coinvolgimento di tutte le parti interessate.</li><li>Favorire la collaborazione tra assistenza sanitaria, accademia, industria e decisori Promuovere un cambiamento culturale orientato alla fiducia e all’adozione della prevenzione digitale.</li></ul>						
-
-
-
-
-
-                  </div>
-    
-    
-              </div>
-    
-              <div class="col-lg-5 order-1 order-lg-2 why-us-img">
-                <img src="assets/img/dare_b.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
-              </div>
-            </div>
-    
-          </div>
-    
-        </section><!-- /Why Us Section -->
-    
-
-
-
-    <!-- Services Section -->
-    <section id="services" class="services section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Didattica</h2>
-       <!-- <p><a href="piano_master.pdf">Scarica il Piano Didattico dettagliato</a></p>-->
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
-              <h4><a href="" class="stretched-link">Modulo I</a></h4>
-              <p><b>Fondamenti di Health Systems </b></p>            
-              <p>Dai sistemi informativi all’Interoperabilità Sanitaria</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-activity icon"></i></div>
-              <h4><a href="" class="stretched-link">Modulo II</a></h4>
-              <p><b>Cyber-Physical Systems per l’Healthcare</b></p>            
-              <p>Telemedicina, IoT & Embedded Systems</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-robot icon"></i></div>
-              <h4><a href="" class="stretched-link">Modulo III</a></h4>
-              <p><b>Machine Learning</b></p>            
-              <p>Introduzione al Machine Learning per la Sanità</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-bar-chart-line-fill icon"></i></div>
-              <h4><a href="" class="stretched-link">Modulo IV</a></h4>
-              <p><b>Fondamenti di Health Data Science</b></p>    
-              <p>Tecniche di Analisi dei Dati Sanitari</p>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
-
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section dark-background">
-
-      <img src="assets/img/back.png" alt="">
-
-      <div class="container">
-
-        <div class="row" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-xl-9 text-center text-xl-start">
-            <h3>Iscrizione</h3>
-            <p>Scadenza: DA DEFINIRE</p>
-            <p>Costo: € 400,00 + € 4,13 (contributo assicurativo) + € 30,00 (contributo partecipazione ammissione) + €16,00 (imposta di bollo)</p>
-            <p>Modalità: blended (mista)</p>
-            <p>Inizio Lezioni: fine 2026-inizio 2027</p>
-          </div>
-          <div class="col-xl-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="https://www.uniba.it/it/didattica/master-universitari/short-master/2026-2027/digital-health-guidare-la-trasformazione-digitale-nel-settore-sanitario">Consulta il Bando</a>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Call To Action Section -->
-
-
-
-    <!-- Team Section -->
-    <section id="team" class="team section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Faculty</h2>
-      <!--  <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>-->
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/rossano.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Veronica Rossano</h4>
-                <span>Professore Associato<br>Direttore Scientifico dello Short Master</span>
-                 
-              <!--  <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>-->
-              <div class="social">
-                <a href="https://www.uniba.it/it/docenti/rossano-veronica"><i class="bi bi-person-circle"></i></a>
-             <!--   <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""> <i class="bi bi-linkedin"></i> </a>-->
-              </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/lanubile.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Filippo Lanubile</h4>
-                <span>Professore Ordinario<br>Referente UNIBA del progetto DARE </span>
-                <!--  <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>-->
-                <div class="social">
-                  <a href="http://www.di.uniba.it/~lanubile/"><i class="bi bi-person-circle"></i></a>
-               <!--   <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>-->
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-
-           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/mallardi.jpeg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Giulio Mallardi</h4>
-                <span>Ricercatore<br> Docente di Health Systems </span>
-             <!--  <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>-->
-             <div class="social">
-              <a href="https://collab.di.uniba.it/giulio-mallardi/"><i class="bi bi-person-circle"></i></a>
-           <!--   <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""> <i class="bi bi-linkedin"></i> </a>-->
-            </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/quaranta.jpeg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Luigi Quaranta</h4>
-                <span>Ricercatore<br>Docente di Health Data Science</span>
-              <!--  <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>-->
-              <div class="social">
-                  <a href="https://collab.di.uniba.it/luigi-quaranta/"><i class="bi bi-person-circle"></i></a>
-               <!--   <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>-->
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-         
-
-        </div>
-
-      </div>
-
-    </section><!-- /Team Section -->
-
-    
-
-  
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contatti</h2>
-    
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-12">
-
-           
-
-
-            <div class="info-wrap">
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email</h3>
-                  <p>digital.health.uniba@gmail.com</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Sede</h3>
-                  <p>Dipartimento di Informatica</p>
-                  <p>Campus Universitario - via Orabona, 4 - 70125 Bari</p>
-                </div>
-              </div><!-- End Info Item -->
-
-      
-  
-
-      
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12024.542019640136!2d16.8815076!3d41.1097316!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1347e84ee4ac5023%3A0x2fa7d7c509b8013f!2sUniversit%C3%A0%20degli%20Studi%20di%20Bari%20-%20Dipartimento%20di%20Informatica!5e0!3m2!1sit!2sit!4v1720026174203!5m2!1sit!2sit" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-          </div>
-
-          <!--<div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <label for="name-field" class="pb-2">Nome</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required="">
-                </div>
-
-                <div class="col-md-6">
-                  <label for="email-field" class="pb-2">Email</label>
-                  <input type="email" class="form-control" name="email" id="email-field" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <label for="subject-field" class="pb-2">Oggetto</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <label for="message-field" class="pb-2">Messaggio</label>
-                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-          </div>
-        -->
-        </div>
-
-      </div>
-
-    </section><!-- /Contact Section -->
-
-  </main>
-
-  <footer id="footer" class="footer dark-background">
-
-
-
-    <div class="container copyright text-center mt-4">
-      <p>Questa ricerca è stata cofinanziata dal Piano Nazionale Complementare PNC-I.1 “Iniziativa di ricerca per le tecnologie e percorsi innovativi in ambito sanitario e assistenziale”, D.D. 931 del 06/06/2022, iniziativa “DARE – Digital lifelong prevention”, codice PNC0000002</p>
-     
-      <br/>    <br/>
-      <img src="assets/img/loghi.png" />
-      <br/>    <br/>  <br/>
-      <p>© <span>Copyright 2024</span> <strong class="px-1 sitename">Dipartimento di Informatica - Università degli Studi di Bari Aldo Moro</strong> <span>All Rights Reserved</span></p>
+  </div>
+</section>
+
+<div class="stats"><div class="wrap">
+  <div class="s"><div class="n">4</div><div class="l">Moduli</div></div>
+  <div class="s"><div class="n">136</div><div class="l">Ore</div></div>
+  <div class="s"><div class="n">5</div><div class="l">CFU</div></div>
+  <div class="s"><div class="n">20–100</div><div class="l">Posti</div></div>
+  <div class="s"><div class="n">Blended</div><div class="l">Modalità</div></div>
+</div></div>
+
+<section class="occ" id="about">
+  <div class="wrap">
+    <div class="head">
+      <span class="kick">Il master</span>
+      <h2>La sanità diventa digitale.<br><b>Servono figure che la guidino.</b></h2>
+      <p>Fascicolo Sanitario Elettronico, telemedicina, dispositivi connessi e intelligenza artificiale stanno ridisegnando l'assistenza. Serve chi conosca i sistemi clinico-ospedalieri e sappia applicare le tecnologie per digitalizzarli e farli dialogare.</p>
     </div>
+    <div class="grid">
+      <div class="card">
+        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18" stroke-linecap="round"/></svg></div>
+        <h3>La figura professionale</h3>
+        <p>Lo Specialista per la Trasformazione Digitale analizza i sistemi IT di ospedali e regioni e disegna i piani di transizione con competenze cloud, cybersecurity e AI.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 12h4l3 8 4-16 3 8h4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>A chi si rivolge</h3>
+        <p>Professionisti del settore sanitario e informatici che operano in ambito sanitario, pronti a fare da ponte tra clinica e tecnologia.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 20V10M12 20V4M20 20v-7" stroke-linecap="round"/></svg></div>
+        <h3>Sbocchi</h3>
+        <p>Ruoli di analisi e transizione digitale in aziende sanitarie, regioni, aziende IT del settore health e centri di ricerca clinica.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-  </footer>
+<section id="percorso">
+  <div class="wrap">
+    <div class="head"><span class="kick">Il percorso</span><h2>Quattro moduli, <b>un percorso continuo</b></h2></div>
+    <div class="mods">
+      <div class="mod"><div class="num">01</div><div class="lab">Modulo I</div><h3>Fondamenti di Health Systems</h3><p>Dai sistemi informativi all'interoperabilità sanitaria.</p></div>
+      <div class="mod"><div class="num">02</div><div class="lab">Modulo II</div><h3>Cyber-Physical Systems</h3><p>Telemedicina, IoT ed embedded systems per l'healthcare.</p></div>
+      <div class="mod"><div class="num">03</div><div class="lab">Modulo III</div><h3>Machine Learning</h3><p>Introduzione al machine learning per la sanità.</p></div>
+      <div class="mod"><div class="num">04</div><div class="lab">Modulo IV</div><h3>Health Data Science</h3><p>Tecniche di analisi dei dati sanitari.</p></div>
+    </div>
+  </div>
+</section>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<section class="model" id="modello">
+  <div class="wrap">
+    <div class="head"><span class="kick">Il modello</span><h2>Strutturato sul modello <b>Edunext</b></h2>
+    <p style="color:rgba(255,255,255,.82)">Progetto promosso dal MUR nell'ambito del PNRR — Missione 4 “Istruzione e ricerca”. Didattica digitale, flessibile e certificata.</p></div>
+    <div class="grid">
+      <div class="f"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="13" rx="2"/><path d="M8 21h8" stroke-linecap="round"/></svg><h4>Didattica mista</h4><p>Lezioni online combinate a momenti in presenza, per formarti senza fermare il lavoro.</p></div>
+      <div class="f"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3" stroke-linecap="round"/></svg><h4>Flessibilità</h4><p>Segui dove vuoi e quando puoi, in un contesto fortemente innovativo.</p></div>
+      <div class="f"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 15a4 4 0 100-8 4 4 0 000 8zM8 14l-2 7 6-3 6 3-2-7" stroke-linejoin="round"/></svg><h4>Attestato universitario</h4><p>5 CFU e attestato di Short Master dell'Università di Bari al termine del percorso.</p></div>
+    </div>
+  </div>
+</section>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+<section id="faculty">
+  <div class="wrap">
+    <div class="head"><span class="kick">Faculty</span><h2>Chi <b>insegna</b></h2></div>
+    <div class="team">
+      <div class="member"><img src="assets/img/team/rossano.jpg" alt="Veronica Rossano"><h3>Veronica Rossano</h3><div class="r">Direttrice del Master<span>Professore Associato</span></div></div>
+      <!-- TODO Giulio: confermare/aggiornare il ruolo di Lanubile (era "Referente UNIBA DARE") -->
+      <div class="member"><img src="assets/img/team/lanubile.jpg" alt="Filippo Lanubile"><h3>Filippo Lanubile</h3><div class="r">Docente<span>Professore Ordinario</span></div></div>
+      <div class="member"><img src="assets/img/team/mallardi.jpeg" alt="Giulio Mallardi"><h3>Giulio Mallardi</h3><div class="r">Health Systems<span>Ricercatore</span></div></div>
+      <div class="member"><img src="assets/img/team/quaranta.jpeg" alt="Luigi Quaranta"><h3>Luigi Quaranta</h3><div class="r">Health Data Science<span>Ricercatore</span></div></div>
+    </div>
+  </div>
+</section>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<section class="enroll" id="iscrizione">
+  <div class="wrap">
+    <div class="head"><span class="kick" style="color:#fff;opacity:.85">Iscrizione</span><h2>Candidati all'edizione <b>2026/2027</b></h2></div>
+    <div class="bando">Bando di prossima emanazione</div>
+    <div class="meta">
+      <div><b>€ 450,13</b>Quota totale*</div>
+      <div><b>5</b>CFU</div>
+      <div><b>136</b>Ore</div>
+      <div><b>20–100</b>Posti</div>
+    </div>
+    <a class="btn btn-viola" style="background:#fff;color:var(--viola)" href="https://www.uniba.it/it/didattica/master-universitari/short-master/2026-2027/digital-health-guidare-la-trasformazione-digitale-nel-settore-sanitario">Vai alla pagina UniBA</a>
+    <p style="font-size:12px;color:rgba(255,255,255,.6);margin-top:20px">* € 400,00 + € 4,13 assicurativo + € 30,00 partecipazione ammissione + € 16,00 imposta di bollo</p>
+  </div>
+</section>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+<section class="contact" id="contatti">
+  <div class="wrap">
+    <div class="head"><span class="kick">Contatti</span><h2>Vuoi <b>maggiori informazioni?</b></h2></div>
+    <div class="grid">
+      <div class="info">
+        <div class="blk"><p><b>Segreteria — U.O. Master</b></p>
+        <p>Centro Polifunzionale Studenti · Piazza Cesare Battisti, 1° piano · Bari</p>
+        <p>master@uniba.it · +39 080 571 4109</p></div>
+        <div class="blk"><p><b>Direzione del Master</b></p>
+        <p>Prof.ssa Veronica Rossano · veronica.rossano@uniba.it</p></div>
+        <div class="blk"><p><b>Struttura proponente</b></p>
+        <p>Dipartimento di Informatica · Via E. Orabona 4, 70125 Bari</p></div>
+      </div>
+      <div>
+        <iframe title="Sede" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12024.542019640136!2d16.8815076!3d41.1097316!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1347e84ee4ac5023%3A0x2fa7d7c509b8013f!2sUniversit%C3%A0%20degli%20Studi%20di%20Bari%20-%20Dipartimento%20di%20Informatica!5e0!3m2!1sit!2sit!4v1720026174203!5m2!1sit!2sit"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Banda istituzionale. TODO Giulio: sostituire le etichette con i loghi ufficiali (UE NextGenerationEU, MUR, Italiadomani/PNRR, Edunext) -->
+<div class="band"><div class="wrap">
+  <div class="row">
+    <span>UE · NextGenerationEU</span>
+    <span>MUR</span>
+    <span>Italiadomani · PNRR</span>
+    <span>Edunext</span>
+  </div>
+  <p class="cup">Missione 4, Componente 1, Investimento 3.4 · CUP di progetto E83C23003480007</p>
+</div></div>
+
+<footer><div class="wrap">
+  <div>
+    <img src="assets/img/unibalogo.svg" alt="Università di Bari"><br>
+    <div class="cup" style="margin-top:10px">© 2026 Dipartimento di Informatica · Università degli Studi di Bari Aldo Moro</div>
+  </div>
+  <div class="cup">Short Master strutturato su modello Edunext · MUR – PNRR M4C1 Inv. 3.4 · CUP E83C23003480007</div>
+</div></footer>
 
 </body>
-
 </html>
