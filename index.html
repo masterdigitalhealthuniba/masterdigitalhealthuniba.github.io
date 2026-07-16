@@ -78,6 +78,8 @@ a{color:inherit;text-decoration:none}
 .nav .wrap{display:flex;align-items:center;height:76px;gap:24px}
 .nav .brand{display:flex;align-items:center;gap:12px;font-family:var(--display);font-weight:600;color:var(--viola);font-size:15px;line-height:1.15}
 .nav .brand img{height:46px}
+.nav .brand .ednx{height:34px;padding-left:14px;border-left:1px solid var(--line)}
+.nav .brand .brand-txt{padding-left:2px}
 .nav ul{list-style:none;display:flex;gap:26px;margin:0 0 0 auto;padding:0}
 .nav ul a{font-family:var(--display);font-weight:500;font-size:14px;color:var(--ink);padding:6px 0;border-bottom:2px solid transparent}
 .nav ul a:hover{color:var(--viola);border-color:var(--viola)}
@@ -125,7 +127,7 @@ section{padding:92px 0}
 .model .f h4{font-size:19px;margin-bottom:8px}
 .model .f p{color:rgba(255,255,255,.8);font-size:15px;margin:0}
 @media(max-width:820px){.model .grid{grid-template-columns:1fr;gap:28px}}
-.team{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+.team{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;max-width:860px;margin:0 auto}
 .member{text-align:center;background:#fff;padding:30px 20px;box-shadow:0 12px 40px rgba(67,22,79,.07)}
 .member img{width:112px;height:112px;object-fit:cover;border-radius:50%;border:4px solid var(--paper)}
 .member h3{font-size:17px;color:var(--viola);margin:16px 0 4px}
@@ -149,6 +151,7 @@ section{padding:92px 0}
 @media(max-width:820px){.contact .grid{grid-template-columns:1fr;gap:28px}}
 .band{padding:44px 0;border-top:1px solid var(--line);text-align:center}
 .band .row{display:flex;gap:40px;justify-content:center;align-items:center;flex-wrap:wrap;color:var(--muted);font-family:var(--display);font-weight:600;font-size:14px;letter-spacing:.03em}
+.band .row .band-logo{height:32px;width:auto}
 .band .cup{font-size:12px;color:var(--muted);margin-top:18px}
 footer{background:var(--scuro);color:rgba(255,255,255,.72);padding:44px 0;font-size:14px}
 footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
@@ -164,7 +167,7 @@ footer .cup{font-size:12px;opacity:.6}
 </div></div>
 
 <header class="nav"><div class="wrap">
-  <a class="brand" href="#hero"><img src="assets/img/unibalogo2.svg" alt="Università di Bari">Short Master<br>Digital Health</a>
+  <a class="brand" href="#hero"><img src="assets/img/unibalogo2.svg" alt="Università di Bari"><img class="ednx" src="assets/img/edunext-logo.png" alt="Edunext" onerror="this.style.display='none'"><span class="brand-txt">Short Master<br>Digital Health</span></a>
   <ul>
     <li><a href="#about">Il master</a></li>
     <li><a href="#percorso">Didattica</a></li>
@@ -253,8 +256,6 @@ footer .cup{font-size:12px;opacity:.6}
     <div class="head"><span class="kick">Faculty</span><h2>Chi <b>insegna</b></h2></div>
     <div class="team">
       <div class="member"><img src="assets/img/team/rossano.jpg" alt="Veronica Rossano"><h3>Veronica Rossano</h3><div class="r">Direttrice del Master<span>Professore Associato</span></div></div>
-      <!-- TODO Giulio: confermare/aggiornare il ruolo di Lanubile (era "Referente UNIBA DARE") -->
-      <div class="member"><img src="assets/img/team/lanubile.jpg" alt="Filippo Lanubile"><h3>Filippo Lanubile</h3><div class="r">Docente<span>Professore Ordinario</span></div></div>
       <div class="member"><img src="assets/img/team/mallardi.jpeg" alt="Giulio Mallardi"><h3>Giulio Mallardi</h3><div class="r">Health Systems<span>Ricercatore</span></div></div>
       <div class="member"><img src="assets/img/team/quaranta.jpeg" alt="Luigi Quaranta"><h3>Luigi Quaranta</h3><div class="r">Health Data Science<span>Ricercatore</span></div></div>
     </div>
@@ -302,7 +303,7 @@ footer .cup{font-size:12px;opacity:.6}
     <span>UE · NextGenerationEU</span>
     <span>MUR</span>
     <span>Italiadomani · PNRR</span>
-    <span>Edunext</span>
+    <img class="band-logo" src="assets/img/edunext-logo.png" alt="Edunext" onerror="this.replaceWith(Object.assign(document.createElement('span'),{textContent:'Edunext'}))">
   </div>
   <p class="cup">Missione 4, Componente 1, Investimento 3.4 · CUP di progetto E83C23003480007</p>
 </div></div>
