@@ -84,7 +84,34 @@ a{color:inherit;text-decoration:none}
 .nav ul{list-style:none;display:flex;gap:26px;margin:0 0 0 auto;padding:0}
 .nav ul a{font-family:var(--display);font-weight:500;font-size:14px;color:var(--ink);padding:6px 0;border-bottom:2px solid transparent}
 .nav ul a:hover{color:var(--viola);border-color:var(--viola)}
-@media(max-width:940px){.nav ul{display:none}}
+.burger{display:none;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;margin-left:auto;cursor:pointer}
+.burger span{display:block;height:2px;width:24px;margin:0 auto;background:var(--viola);border-radius:2px;transition:.25s}
+.navtog{display:none}
+.navtog:checked ~ .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.navtog:checked ~ .burger span:nth-child(2){opacity:0}
+.navtog:checked ~ .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.cta-m{display:none}
+@media(max-width:940px){
+  .nav .wrap{gap:12px}
+  .burger{display:flex}
+  .nav .cta{display:none}
+  .nav ul{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:#fff;box-shadow:0 14px 26px rgba(67,22,79,.14);padding:6px 0;margin:0}
+  .navtog:checked ~ ul{display:flex}
+  .nav ul a{display:block;padding:14px 26px;border-bottom:0;width:100%}
+  .nav ul a:hover{border-color:transparent;background:var(--paper)}
+  .cta-m{display:block}
+  .cta-m a{color:var(--viola);font-weight:600}
+}
+@media(max-width:600px){
+  .nav .brand .ednx,.nav .brand img[alt="Università di Bari"]{display:none}
+  .nav .brand .mlogo{height:40px}
+  .nav .brand .brand-txt{font-size:13px}
+  section{padding:60px 0}
+}
+@media(max-width:700px){
+  .topbar .wrap{height:auto;padding:8px 26px;justify-content:center;text-align:center;gap:6px}
+  .topbar .tagline{display:none}
+}
 .hero{position:relative;color:#fff;min-height:80vh;display:flex;align-items:center;overflow:hidden}
 .hero::before{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(120deg,rgba(67,22,79,.95),rgba(108,36,120,.82) 45%,rgba(184,61,134,.6)),url('assets/img/backdrop.png') center/cover}
 .hero .wrap{position:relative;z-index:1;padding:80px 26px}
@@ -171,20 +198,23 @@ footer .cup{font-size:12px;opacity:.6}
 <body>
 
 <div class="topbar"><div class="wrap">
-  <span>Short Master Digital Health: Guidare la trasformazione digitale della sanità</span>
+  <span class="tagline">Short Master Digital Health: Guidare la trasformazione digitale della sanità</span>
   <div class="r"><a href="mailto:master@uniba.it">master@uniba.it</a><a href="tel:+390805714109">+39 080 571 4109</a></div>
 </div></div>
 
 <header class="nav"><div class="wrap">
   <a class="brand" href="#hero"><img class="mlogo" src="assets/img/logo-master.png" alt="Short Master Digital Health" onerror="this.style.display='none'"><span class="brand-txt">Short Master<br>Digital Health</span><img src="assets/img/unibalogo2.svg" alt="Università di Bari"><img class="ednx" src="assets/img/edunext-logo.png" alt="Edunext" onerror="this.style.display='none'"></a>
+  <input type="checkbox" id="navtog" class="navtog" aria-hidden="true">
+  <label for="navtog" class="burger" aria-label="Apri il menu"><span></span><span></span><span></span></label>
   <ul>
-    <li><a href="#about">Il master</a></li>
+    <li><a href="#about">Il Master</a></li>
     <li><a href="#percorso">Didattica</a></li>
     <li><a href="#modello">Modello ECOBI</a></li>
     <li><a href="#faculty">Faculty</a></li>
     <li><a href="#contatti">Contatti</a></li>
+    <li class="cta-m"><a href="#iscrizione">Iscriviti</a></li>
   </ul>
-  <a class="btn btn-viola" href="#iscrizione">Iscriviti</a>
+  <a class="btn btn-viola cta" href="#iscrizione">Iscriviti</a>
 </div></header>
 
 <section class="hero" id="hero" style="padding:0">
