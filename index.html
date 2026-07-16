@@ -112,15 +112,17 @@ section{padding:92px 0}
 .occ .card .ic{width:54px;height:54px;border-radius:50%;background:var(--paper);color:var(--viola);display:flex;align-items:center;justify-content:center;margin-bottom:20px}
 .occ .card h3{font-size:21px;color:var(--viola);margin-bottom:10px}
 .occ .card p{color:var(--muted);font-size:15px;flex:1;margin:0}
-.mods{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;position:relative}
-.mods::before{content:"";position:absolute;left:9%;right:9%;top:36px;height:2px;background:linear-gradient(90deg,var(--viola),var(--magenta));opacity:.45}
-.mod{position:relative;text-align:center;background:#fff;border:1px solid var(--line);padding:0 24px 30px}
-.mod .num{width:72px;height:72px;margin:-36px auto 18px;border-radius:50%;background:var(--viola);color:#fff;font-family:var(--display);font-weight:300;font-size:28px;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(67,22,79,.3)}
-.mod .lab{font-family:var(--display);font-weight:600;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--magenta);margin-bottom:8px}
-.mod h3{font-size:18px;color:var(--viola);margin-bottom:8px}
-.mod p{font-size:14px;color:var(--muted);margin:0}
-@media(max-width:900px){.mods{grid-template-columns:repeat(2,1fr)}.mods::before{display:none}}
-@media(max-width:520px){.mods{grid-template-columns:1fr}}
+.steps{max-width:900px;margin:54px auto 0;position:relative}
+.step{display:grid;grid-template-columns:72px 1fr;gap:26px;padding-bottom:40px;position:relative}
+.step:not(:last-child)::before{content:"";position:absolute;left:35px;top:76px;bottom:-4px;width:2px;background:linear-gradient(var(--viola),var(--magenta));opacity:.35}
+.step .num{width:72px;height:72px;border-radius:50%;background:var(--viola);color:#fff;font-family:var(--display);font-weight:300;font-size:26px;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(67,22,79,.25);z-index:1}
+.step .body{padding-top:6px}
+.step .lab{font-family:var(--display);font-weight:600;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--magenta);margin-bottom:4px}
+.step h3{font-size:21px;color:var(--viola);margin-bottom:6px}
+.step .doc{font-size:12.5px;color:var(--muted);margin:0 0 12px}
+.step .topics{display:flex;flex-wrap:wrap;gap:8px}
+.step .topics span{background:var(--paper);border:1px solid var(--line);color:var(--ink);font-size:13px;padding:6px 13px;border-radius:20px}
+@media(max-width:520px){.step{grid-template-columns:52px 1fr;gap:16px}.step .num{width:52px;height:52px;font-size:20px}.step:not(:last-child)::before{left:25px;top:56px}}
 .model{background:var(--viola);color:#fff}
 .model .head h2{color:#fff}.model .head .kick{color:#fff;opacity:.85}
 .model .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
@@ -200,7 +202,7 @@ footer .cup{font-size:12px;opacity:.6}
 </section>
 
 <div class="stats"><div class="wrap">
-  <div class="s"><div class="n">4</div><div class="l">Moduli</div></div>
+  <div class="s"><div class="n">5</div><div class="l">Moduli</div></div>
   <div class="s"><div class="n">136</div><div class="l">Ore</div></div>
   <div class="s"><div class="n">5</div><div class="l">CFU</div></div>
   <div class="s"><div class="n">20–100</div><div class="l">Posti</div></div>
@@ -236,12 +238,13 @@ footer .cup{font-size:12px;opacity:.6}
 
 <section id="percorso">
   <div class="wrap">
-    <div class="head"><span class="kick">Il percorso</span><h2>Quattro moduli, <b>un percorso continuo</b></h2></div>
-    <div class="mods">
-      <div class="mod"><div class="num">01</div><div class="lab">Modulo I</div><h3>Fondamenti di Health Systems</h3><p>Dai sistemi informativi all'interoperabilità sanitaria.</p></div>
-      <div class="mod"><div class="num">02</div><div class="lab">Modulo II</div><h3>Cyber-Physical Systems</h3><p>Telemedicina, IoT ed embedded systems per l'healthcare.</p></div>
-      <div class="mod"><div class="num">03</div><div class="lab">Modulo III</div><h3>Machine Learning</h3><p>Introduzione al machine learning per la sanità.</p></div>
-      <div class="mod"><div class="num">04</div><div class="lab">Modulo IV</div><h3>Health Data Science</h3><p>Tecniche di analisi dei dati sanitari.</p></div>
+    <div class="head"><span class="kick">Il percorso</span><h2>Cinque moduli, <b>un percorso continuo</b></h2></div>
+    <div class="steps">
+      <div class="step"><div class="num">01</div><div class="body"><div class="lab">Modulo I</div><h3>Fondamenti di programmazione</h3><p class="doc">Responsabile: Veronica Rossano</p><div class="topics"><span>Introduzione alla programmazione</span><span>Algoritmi fondamentali</span><span>Primi approcci alla programmazione</span></div></div></div>
+      <div class="step"><div class="num">02</div><div class="body"><div class="lab">Modulo II</div><h3>Fondamenti di Health Systems</h3><p class="doc">Responsabile: Giulio Mallardi</p><div class="topics"><span>Introduzione ai sistemi informativi sanitari</span><span>Standard per l'interoperabilità sanitaria</span><span>Cenni di sicurezza informatica</span><span>Project, Risk &amp; Incident Management</span><span>Analisi dei sistemi IT sanitari</span></div></div></div>
+      <div class="step"><div class="num">03</div><div class="body"><div class="lab">Modulo III</div><h3>Cyber-Physical Systems per l'Healthcare</h3><p class="doc">Responsabile: Giulio Mallardi</p><div class="topics"><span>Telemedicina</span><span>Internet of Things (IoT) e Edge Computing</span><span>Embedded systems nel settore sanitario</span><span>Qualità di prodotto e di processo</span><span>Standard di settore e certificazione dei Medical Device</span></div></div></div>
+      <div class="step"><div class="num">04</div><div class="body"><div class="lab">Modulo IV</div><h3>Introduzione al Machine Learning</h3><p class="doc">Responsabile: Luigi Quaranta</p><div class="topics"><span>Introduzione al linguaggio Python</span><span>Fondamenti di machine learning e applicazioni in ambito sanitario</span><span>Paradigmi di apprendimento e principali algoritmi</span></div></div></div>
+      <div class="step"><div class="num">05</div><div class="body"><div class="lab">Modulo V</div><h3>Fondamenti di Health Data Science</h3><p class="doc">Responsabile: Luigi Quaranta</p><div class="topics"><span>Elaborazione di dati tabulari con Pandas</span><span>Esplorazione e visualizzazione di dati sanitari</span><span>Preparazione dei dati per il machine learning</span><span>Costruzione di modelli con scikit-learn</span><span>Introduzione a ML engineering e MLOps</span></div></div></div>
     </div>
   </div>
 </section>
