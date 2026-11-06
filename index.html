@@ -169,15 +169,28 @@ section{padding:92px 0}
 .enroll::before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(67,22,79,.93),rgba(108,36,120,.9)),url('assets/img/back.png') center/cover}
 .enroll .wrap{position:relative}
 .enroll h2{color:#fff;margin-bottom:8px}
-.enroll .bando{display:inline-block;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:8px 18px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;margin:14px 0 18px}
-.enroll .cal{max-width:640px;margin:0 auto 28px;font-size:15px;color:rgba(255,255,255,.9);line-height:1.6}
-.enroll .cal b{color:#fff;font-weight:600}
-.enroll .cal small{display:block;margin-top:6px;font-size:12px;color:rgba(255,255,255,.6)}
-.enroll .meta{display:flex;gap:44px;justify-content:center;flex-wrap:wrap;margin-bottom:32px;font-size:14px;color:rgba(255,255,255,.85)}
-.enroll .meta b{display:block;color:#fff;font-family:var(--display);font-weight:300;font-size:26px}
-.enroll .conv{max-width:640px;margin:26px auto 0;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.28);padding:16px 22px;font-size:14px;color:rgba(255,255,255,.9);line-height:1.55}
+/* --- Calendario / timeline iscrizione --- */
+.enroll .timeline{display:flex;align-items:stretch;justify-content:center;gap:0;flex-wrap:wrap;margin:30px auto 10px;max-width:720px}
+.enroll .tl{flex:1;min-width:230px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);border-radius:14px;padding:22px 24px;display:flex;align-items:center;gap:16px;text-align:left}
+.enroll .tl .tl-ic{flex:none;width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.14);display:flex;align-items:center;justify-content:center;color:#fff}
+.enroll .tl .tl-k{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.7)}
+.enroll .tl .tl-v{font-family:var(--display);font-weight:500;font-size:19px;color:#fff;margin-top:2px}
+.enroll .tl-sep{flex:none;display:flex;align-items:center;color:rgba(255,255,255,.5);font-size:22px;padding:0 10px}
+.enroll .cal-note{font-size:12px;color:rgba(255,255,255,.6);margin:0 0 30px}
+.enroll .facts{display:flex;gap:0;justify-content:center;flex-wrap:wrap;margin:0 auto 30px;max-width:720px;border:1px solid rgba(255,255,255,.22);border-radius:14px;overflow:hidden}
+.enroll .facts .f{flex:1;min-width:150px;padding:22px 16px;border-right:1px solid rgba(255,255,255,.16)}
+.enroll .facts .f:last-child{border-right:0}
+.enroll .facts .fv{font-family:var(--display);font-weight:300;font-size:27px;color:#fff}
+.enroll .facts .fl{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-top:4px}
+.enroll .conv{max-width:720px;margin:26px auto 0;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.28);border-radius:14px;padding:16px 22px;font-size:14px;color:rgba(255,255,255,.9);line-height:1.55}
 .enroll .conv b{color:#fff}
 .enroll .conv a{color:#fff;text-decoration:underline}
+.enroll .fineprint{font-size:12px;color:rgba(255,255,255,.6);margin-top:20px}
+@media(max-width:600px){
+  .enroll .timeline{flex-direction:column;gap:12px}
+  .enroll .tl-sep{transform:rotate(90deg);padding:2px 0}
+  .enroll .facts .f{flex:1 1 45%;border-right:0;border-bottom:1px solid rgba(255,255,255,.16)}
+}
 .contact .grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
 .contact .field{width:100%;padding:14px 16px;border:1px solid var(--line);font-family:var(--body);font-size:15px;margin-bottom:14px}
 .contact textarea{min-height:120px;resize:vertical}
@@ -306,17 +319,31 @@ footer .cup{font-size:12px;opacity:.6}
 <section class="enroll" id="iscrizione">
   <div class="wrap">
     <div class="head"><span class="kick" style="color:#fff;opacity:.85">Iscrizione</span><h2>Candidati all'edizione <b>2026/2027</b></h2></div>
-      <p class="cal">Apertura del bando a <b>settembre 2026</b></p>
-        <p class="cal">Lezioni da <b>gennaio 2027</b> a <b>marzo 2027</b><small>(Date indicative)</small></p>
-    <div class="meta">
-      <div><b>€ 450,13</b>Quota totale*</div>
-      <div><b>5</b>CFU</div>
-      <div><b>136</b>Ore</div>
-      <div><b>20–100</b>Posti</div>
+
+    <div class="timeline">
+      <div class="tl">
+        <span class="tl-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 3v4M17 3v4M4 9h16M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"/></svg></span>
+        <div><div class="tl-k">Apertura del bando</div><div class="tl-v">Settembre 2026</div></div>
+      </div>
+      <div class="tl-sep">→</div>
+      <div class="tl">
+        <span class="tl-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1 2.7 2.5 6 2.5s6-1.5 6-2.5v-5" stroke-linecap="round"/></svg></span>
+        <div><div class="tl-k">Lezioni</div><div class="tl-v">Gennaio – Marzo 2027</div></div>
+      </div>
     </div>
+    <p class="cal-note">Date indicative, in attesa della pubblicazione del bando.</p>
+
+    <div class="facts">
+      <div class="f"><div class="fv">€ 450,13</div><div class="fl">Quota totale*</div></div>
+      <div class="f"><div class="fv">5</div><div class="fl">CFU</div></div>
+      <div class="f"><div class="fv">136</div><div class="fl">Ore</div></div>
+      <div class="f"><div class="fv">20–100</div><div class="fl">Posti</div></div>
+    </div>
+
     <a class="btn btn-viola" style="background:#fff;color:var(--viola)" href="https://www.uniba.it/it/didattica/master-universitari/short-master/2026-2027/digital-health-guidare-la-trasformazione-digitale-nel-settore-sanitario">Vai alla pagina del Bando UniBA</a>
+
     <div class="conv"><b>Enti, aziende e gruppi.</b> Per iscrizioni multiple (oltre 5 partecipanti) è possibile attivare una convenzione con condizioni agevolate. Per informazioni: <a href="mailto:master@uniba.it">master@uniba.it</a>.</div>
-    <p style="font-size:12px;color:rgba(255,255,255,.6);margin-top:20px">* € 400,00 + € 4,13 assicurativo + € 30,00 partecipazione ammissione + € 16,00 imposta di bollo</p>
+    <p class="fineprint">* € 400,00 + € 4,13 assicurativo + € 30,00 partecipazione ammissione + € 16,00 imposta di bollo</p>
   </div>
 </section>
 
